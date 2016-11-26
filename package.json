@@ -1,0 +1,23 @@
+{
+  "name": "trello",
+  "version": "0.9.0",
+  "description": "trello",
+  "main": "index.js",
+  "author": "nobiki <obiki.wk@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://trello.com/",
+    "serviceName": "trello",
+    "message": "",
+    "popup": [],
+    "hasNotificationSound": false,
+    "hasIndirectMessages": false,
+    "hasTeamID": false,
+    "customURL": false,
+    "hostedOnly": false,
+    "webviewOptions": {
+      "disablewebsecurity": ""
+    },
+    "openDevTools": false
+  }
+}
