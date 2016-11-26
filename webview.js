@@ -1,14 +1,9 @@
 module.exports = (Franz, options) => {
     function getMessages() {
-        $('.item-box-title h1 a').each((i, e) => {
-            $(e).attr('target', '_blank');
-        });
+		const now_count = $(".board-canvas .is-due-now").length;
+		const soon_count = $(".board-canvas .is-due-soon").length;
 
-        var unread = 0;
-        const flush = $('div.flush-button.active')[0];
-        const notify = parseInt($('div.globalNotifications_count')[0].textContent)
-        Franz.setBadge(notify, unread);
+        Franz.setBadge(now_count+soon_count);
     }
-
     Franz.loop(getMessages);
 }
